@@ -11,8 +11,16 @@ describe "when a user goes to /search" do
                       fuel_types: "ELEC, LPG"}
       stations << Station.new(station_data)
     end
-    allow_any_instance_of(Station).to receive(:search_by_zipcode).and_return(stations)
-    visit search_path
+    allow(Station).to receive(:search_by_zipcode).and_return(stations)
+    visit root_path
+
+    within(".search-field") do
+      fill_in("q", with: "85701")
+    end
+
+    click_on "Locate"
+
+    expect(current_path).to eq(search_path)
 
     within(".station_one") do
       expect(page).to have_content("Station: #{stations.first.name}")
