@@ -2,7 +2,15 @@ require 'rails_helper'
 
 describe "when a user goes to /search" do
   it "they see a list of 10 closest stations and their attributes" do
-    stations = Fabricate.times(10, :station)
+    stations = []
+    10.times do
+      station_data = {name: "Pennington Garage",
+                      address: "110 E. Pennington",
+                      distance: 0.58563,
+                      access_times: "24/7",
+                      fuel_types: "ELEC, LPG"}
+      stations << Station.new(station_data)
+    end
     allow_any_instance_of(Station).to receive(:search_by_zipcode).and_return(stations)
     visit search_path
 

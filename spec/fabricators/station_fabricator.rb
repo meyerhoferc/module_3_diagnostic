@@ -1,4 +1,4 @@
-Fabrication(:station) do
+Fabricator(:station) do
   name "Pennington Garage"
   address "110 E. Pennington"
   distance 0.58563
