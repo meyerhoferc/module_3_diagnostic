@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=QMl4YYq5qEQMoGUxtHoXFS8TfeRpw1FBd0tgTFk5&fuel_type=ELEC,LPG&limit=10&location=85701&radius=6.0&status=E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 Mar 2017 16:03:39 GMT
+      Last-Modified:
+      - Wed, 29 Mar 2017 16:03:39 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '996'
+      X-Request-Id:
+      - 8fc6e423-f604-4bbf-90d1-d037659f0494
+      X-Runtime:
+      - '0.010377'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":32.2147915,"longitude":-110.9715269,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":31,"station_counts":{"total":50,"fuels":{"E85":{"total":0},"ELEC":{"total":44,"stations":{"total":25}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":6}}},"offset":0,"fuel_stations":[{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":49252,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Pennington
+        St. Garage","station_phone":"888-998-2546","updated_at":"2017-03-29T07:10:08Z","geocode_status":"GPS","latitude":32.223128,"longitude":-110.96958,"city":"Tucson","intersection_directions":"W
+        entrance off N Scott Ave\nLevel1\nOn N side at stairs\nW entrance off N Scott
+        Ave\nLevel1\nOn N side at stairs","plus4":null,"state":"AZ","street_address":"110
+        E. Pennington","zip":"85701","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["53431"],"posts":["50723","50719"]},"distance":0.58563},{"access_days_time":"MON:
+        6:00am-9:00pm | TUE: 6:00am-9:00pm | WED: 6:00am-9:00pm | THU: 6:00am-9:00pm
+        | FRI: 6:00am-9:00pm","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":48348,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Joel
+        D Valdez Library","station_phone":"888-998-2546","updated_at":"2017-03-29T07:12:28Z","geocode_status":"GPS","latitude":32.224307,"longitude":-110.972385,"city":"Tucson","intersection_directions":"Public
+        Works Garage Level 1 (just up \nthe entry ramp to the  - right). Extra \nparking
+        fees may apply  - and closed \nlegal holidays.\n\nPublic Works Garage Level
+        1 (just up \nthe entry ramp to the  - right). Extra \nparking fees may apply  -
+        and closed \nlegal holidays.\n","plus4":null,"state":"AZ","street_address":"50
+        W. Alameda Street","zip":"85701","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["108475"],"posts":["50676","50677"]},"distance":0.65758},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":47502,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Antigone
+        Books","station_phone":"888-998-2546","updated_at":"2017-03-29T07:13:30Z","geocode_status":"GPS","latitude":32.226711,"longitude":-110.965666,"city":"Tucson","intersection_directions":"E
+        entrance off N 4th  Ave\nNW end off parking lot","plus4":null,"state":"AZ","street_address":"411
+        N. 4th Ave","zip":"85705","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["45120"],"posts":["81811"]},"distance":0.89017},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":41782,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Brooklyn
+        Pizza","station_phone":"888-998-2546","updated_at":"2017-03-29T07:09:24Z","geocode_status":"GPS","latitude":32.228759,"longitude":-110.965274,"city":"Tucson","intersection_directions":"N
+        entrance to parking lot off E 5th St\nN side of building\nN entrance to parking
+        lot off E 5th St\nN side of building","plus4":null,"state":"AZ","street_address":"534
+        N. 4th Ave","zip":"85705","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["51412"],"posts":["11908","11907"]},"distance":1.02976},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":77115,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"University
+        of Arizona Tyndall Avenue Garage","station_phone":"888-998-2546","updated_at":"2017-03-29T07:13:38Z","geocode_status":"GPS","latitude":32.230382,"longitude":-110.958784,"city":"Tucson","intersection_directions":null,"plus4":null,"state":"AZ","street_address":"711
+        North Tyndall Avenue","zip":"85701","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["274840"],"posts":["11875"]},"distance":1.3081},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":77116,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"University
+        of Arizona 6th Street Garage East","station_phone":"888-998-2546","updated_at":"2017-03-29T07:13:38Z","geocode_status":"GPS","latitude":32.228329,"longitude":-110.952923,"city":"Tucson","intersection_directions":null,"plus4":null,"state":"AZ","street_address":"1201
+        E. 6th St","zip":"85721","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["274839"],"posts":["11881"]},"distance":1.43441},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":73211,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"University
+        of Arizona 2nd St Garage","station_phone":"888-998-2546","updated_at":"2017-03-29T07:10:36Z","geocode_status":"GPS","latitude":32.235238,"longitude":-110.952151,"city":"Tucson","intersection_directions":null,"plus4":null,"state":"AZ","street_address":"1340
+        E. 2nd Street","zip":"85719","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["251368"],"posts":["9034"]},"distance":1.80909},{"access_days_time":"7am-7pm
+        M-Th and Sat, 7am-8pm F, 9am-5pm Sun","cards_accepted":"Cash A D M V","date_last_confirmed":"2016-10-04","expected_date":null,"fuel_type_code":"LPG","id":70165,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"U-Haul","station_phone":"520-575-5367","updated_at":"2017-01-18T00:50:25Z","geocode_status":"200-8","latitude":32.1784204,"longitude":-110.9692645,"city":"Tucson","intersection_directions":null,"plus4":null,"state":"AZ","street_address":"32
+        W Ajo Way","zip":"85713","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.50962},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":46705,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Arizona
+        Inn","station_phone":"888-998-2546","updated_at":"2017-03-29T07:08:32Z","geocode_status":"GPS","latitude":32.242606,"longitude":-110.939512,"city":"Tucson","intersection_directions":"4
+        @ NE corner of E Lee St and N Olsen - \nN side of E Lee st\n\n4 @ NE corner
+        of E Lee St and N Olsen - \nN side of E Lee st\n\n4 @ NE corner of E Lee St
+        and N Olsen - \nN side of E Lee st\n\n4 @ NE corner of E Lee St and N Olsen
+        - \nN side of E Lee st\n","plus4":null,"state":"AZ","street_address":"2200
+        E. Elm Street","zip":"85719","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["49182"],"posts":["41560","43989","34768","41556"]},"distance":2.68124},{"access_days_time":"MON:
+        24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours |
+        SAT: 24 hours | SUN: 24 hours","cards_accepted":null,"date_last_confirmed":"2017-03-29","expected_date":null,"fuel_type_code":"ELEC","id":47507,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Himmel
+        Park Branch Library","station_phone":"888-998-2546","updated_at":"2017-03-29T07:10:03Z","geocode_status":"GPS","latitude":32.234652,"longitude":-110.931963,"city":"Tucson","intersection_directions":"N
+        entrance to parking lot off E 1st St\nSE corner of parking lot\nN entrance
+        to parking lot off E 1st St\nSE corner of parking lot","plus4":null,"state":"AZ","street_address":"1035
+        North Treat","zip":"85716","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Blink
+        Network","ev_network_web":"http://www.blinknetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["53335"],"posts":["17787","13159"]},"distance":2.69123}]}'
+    http_version: 
+  recorded_at: Wed, 29 Mar 2017 16:03:39 GMT
+recorded_with: VCR 3.0.3
