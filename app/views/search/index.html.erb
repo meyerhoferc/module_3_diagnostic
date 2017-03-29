@@ -2,12 +2,12 @@
 
 <div class="stations">
   <% @stations.each do |station| %>
-    <div class="<%= station.name.chars.last %>">
-      Station: <%= station.name %>
-      Distance: <%= station.distance %>
-      Address: <%= station.address %>
-      Fuel Types Available: <%= station.fuel_types %>
-      Times of Operation: <%= station.access_times %>
+    <div class="<%= station.name.split.last %>">
+      <p>Station: <%= station.name %></p>
+      <p>Distance: <%= station.distance %> miles</p>
+      <p>Address: <%= station.address %></p>
+      <p>Fuel Types Available: <%= station.fuel_types %></p>
+      <p>Times of Operation: <%= station.access_times %></p>
     </div>
   <% end %>
 </div>

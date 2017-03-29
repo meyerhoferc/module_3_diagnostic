@@ -22,7 +22,7 @@ describe "when a user goes to /search" do
 
     expect(current_path).to eq(search_path)
 
-    within(".1") do
+    within(".Garage0") do
       expect(page).to have_content("Station: #{stations.first.name}")
       expect(page).to have_content("Address: #{stations.first.address}")
       expect(page).to have_content("Distance: #{stations.first.distance} miles")
