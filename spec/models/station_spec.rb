@@ -17,10 +17,12 @@ describe Station do
         "street_address": "50 W. Alameda Street",
         "distance": 0.65758
       }
-      stations = [JSON.parse(station_data_one.to_json, symbolize_names: true), 
+      stations = [JSON.parse(station_data_one.to_json, symbolize_names: true),
         JSON.parse(station_data_two.to_json, symbolize_names: true)]
+
       allow_any_instance_of(NRELService).to receive(:get_stations_by_zipcode).and_return(stations)
       stations = Station.search_by_zipcode(85701)
+      
       expect(stations.first.class).to eq(Station)
       expect(stations.first.name).to eq("Pennington St. Garage")
       expect(stations.first.address).to eq("110 E. Pennington")

@@ -4,6 +4,7 @@ class Station
               :distance,
               :fuel_types,
               :access_times
+              
   def initialize(station_data)
     @name = station_data[:name]
     @address = station_data[:address]
