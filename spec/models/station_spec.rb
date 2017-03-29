@@ -20,7 +20,12 @@ describe Station do
       stations = [JSON.parse(station_data_one.to_json), JSON.parse(station_data_two.to_json)]
       allow_any_instance_of(NRELService).to receive(:get_stations_by_zipcode).and_return(stations)
       stations = Station.search_by_zipcode(85701)
-      expect()
+      expect(stations.first.class).to eq(Station)
+      expect(stations.first.name).to eq("Pennington St. Garage")
+      expect(stations.first.address).to eq("110 E. Pennington")
+      expect(stations.first.distance).to eq(0.58563)
+      expect(stations.first.fuel_types).to eq("ELEC")
+      expect(stations.first.access_times).to eq("MON: 24 hours | TUE: 24 hours | WED: 24 hours | THU: 24 hours | FRI: 24 hours | SAT: 24 hours | SUN: 24 hours")
     end
   end
 end
