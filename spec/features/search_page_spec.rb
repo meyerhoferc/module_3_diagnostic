@@ -22,6 +22,11 @@ describe "when a user goes to /search" do
 
     expect(current_path).to eq(search_path)
 
+    within(".legend") do
+      expect(page).to have_content("LPG - Propane")
+      expect(page).to have_content("ELEC - Electric")
+    end
+
     within(".Garage0") do
       expect(page).to have_content("Station: #{stations.first.name}")
       expect(page).to have_content("Address: #{stations.first.address}")
