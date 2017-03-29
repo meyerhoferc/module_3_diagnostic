@@ -3,8 +3,8 @@ require 'rails_helper'
 describe "when a user goes to /search" do
   it "they see a list of 10 closest stations and their attributes" do
     stations = []
-    10.times do
-      station_data = {name: "Pennington Garage",
+    10.times do |i|
+      station_data = {name: "Pennington Garage#{i}",
                       address: "110 E. Pennington",
                       distance: 0.58563,
                       access_times: "24/7",
@@ -22,12 +22,12 @@ describe "when a user goes to /search" do
 
     expect(current_path).to eq(search_path)
 
-    within(".station_one") do
+    within(".1") do
       expect(page).to have_content("Station: #{stations.first.name}")
       expect(page).to have_content("Address: #{stations.first.address}")
       expect(page).to have_content("Distance: #{stations.first.distance} miles")
       expect(page).to have_content("Times of Operation: #{stations.first.access_times}")
-      expect(page).to have_content("Fuel Types: #{stations.first.fuel_types}")
+      expect(page).to have_content("Fuel Types Available: #{stations.first.fuel_types}")
     end
   end
 end

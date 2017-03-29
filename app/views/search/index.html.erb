@@ -1,0 +1,13 @@
+<h1>Stations within 6 miles of <%= @zipcode %></h1>
+
+<div class="stations">
+  <% @stations.each do |station| %>
+    <div class="<%= station.name.chars.last %>">
+      Station: <%= station.name %>
+      Distance: <%= station.distance %>
+      Address: <%= station.address %>
+      Fuel Types Available: <%= station.fuel_types %>
+      Times of Operation: <%= station.access_times %>
+    </div>
+  <% end %>
+</div>

@@ -1,5 +1,6 @@
 class SearchController < ApplicationController
   def index
-    @stations = Station.search_by_zipcode(params[:q])
+    @zipcode = params[:q]
+    @stations = Station.search_by_zipcode(@zipcode)
   end
 end
